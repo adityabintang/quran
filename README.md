@@ -1,6 +1,6 @@
 # quran_app
 
-A new Flutter project.
+this is a quran apps that make app for dua, and reading holy quran
 
 ## Getting Started
 
