@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quran_app/models/master_data.dart';
 import 'package:quran_app/ui/doa/doa_page.dart';
+import 'package:quran_app/ui/sholawat/sholawat_page.dart';
 import 'package:quran_app/ui/xroot/root_page.dart';
 
 class Menus {
@@ -25,8 +26,13 @@ class Menus {
     );
   }
 
-  goSholawatPage() {
-    debugPrint('Sholawat');
+  goSholawatPage(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const PrayersPage(),
+      ),
+    );
   }
 
   List<MasterData> buildMenus(BuildContext context) {
@@ -56,7 +62,7 @@ class Menus {
       image: "assets/sholawat.png",
       // color: MyColors.green,
       title: "Sholawat",
-      onTap: goSholawatPage,
+      onTap: () => goSholawatPage(context),
     ));
 
     return masterDataList;

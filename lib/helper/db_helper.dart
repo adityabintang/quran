@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
 import 'package:quran_app/models/ayah_model.dart';
-import 'package:quran_app/models/detail_surah_model.dart';
 import 'package:quran_app/models/error_model.dart';
 import 'package:sqflite/sqflite.dart';
 

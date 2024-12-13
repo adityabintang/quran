@@ -2,7 +2,6 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quran_app/helper/db_helper.dart';
 import 'package:quran_app/models/ayah_model.dart';
-import 'package:quran_app/models/detail_surah_model.dart';
 import 'package:quran_app/models/error_model.dart';
 
 part 'bloc_event.dart';

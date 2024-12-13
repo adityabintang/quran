@@ -5,16 +5,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_app/ui/doa/component/search_box.dart';
 import 'package:quran_app/ui/doa/list_doa.dart';
+import 'package:quran_app/ui/sholawat/list_sholawat.dart';
 import 'package:quran_app/widget/search.dart';
 
-class DoaPage extends StatefulWidget {
-  const DoaPage({super.key});
+class PrayersPage extends StatefulWidget {
+  const PrayersPage({super.key});
 
   @override
-  State<DoaPage> createState() => _DoaPageState();
+  State<PrayersPage> createState() => _PrayersPageState();
 }
 
-class _DoaPageState extends State<DoaPage> {
+class _PrayersPageState extends State<PrayersPage> {
   final _searchController = TextEditingController();
 
   @override
@@ -39,13 +40,13 @@ class _DoaPageState extends State<DoaPage> {
             children: [
               _buildAppBar(),
               SearchBoxComponent(
-                hintText: 'Search Doa',
+                hintText: 'Search Sholawat',
                 searchController: _searchController,
                 onSearching: _onSearching,
                 onClear: _onClear,
               ),
               const Expanded(
-                child: ListDoaPage(),
+                child: ListSholawatPage(),
               ),
             ],
           ),
@@ -90,7 +91,7 @@ class _DoaPageState extends State<DoaPage> {
                 top: 26,
               ),
               child: Text(
-                'Doa',
+                'Sholawat',
                 style: GoogleFonts.roboto(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,

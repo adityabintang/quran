@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class ImageTile extends StatelessWidget {
   const ImageTile({
-    Key? key,
+    super.key,
     required this.index,
     required this.width,
     required this.height,
-  }) : super(key: key);
+  });
 
   final int index;
   final int width;

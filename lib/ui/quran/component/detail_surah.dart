@@ -96,11 +96,11 @@ class _DetailSurahPageState extends State<DetailSurahPage> {
                 color: Colors.grey,
               ),
             ),
-            trailing: const Icon(
-              CupertinoIcons.bookmark_fill,
-              size: 20,
-              color: Color(0xFF332885),
-            ),
+            // trailing: const Icon(
+            //   CupertinoIcons.bookmark_fill,
+            //   size: 20,
+            //   color: Color(0xFF332885),
+            // ),
           ),
         );
       },
